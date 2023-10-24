@@ -1,4 +1,4 @@
-# SOEN 6841: Topic Analysis and Synthesis
+# Topic Analysis and Synthesis (SOEN 6841)  
 
 SOEN 6841- Software Project Management.   
 Topic Analysis and Synthesis VCS Repository.  
