@@ -3,19 +3,21 @@
 % Version 2.20 of 2017/10/04
 %
 \documentclass[runningheads]{llncs}
+% \documentclass{article}
 %
 \usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage[colorlinks=true, urlcolor=blue, pdfborder={0 0 0}]{hyperref}
+\usepackage{tocbibind}
 % Used for displaying a sample figure. If possible, figure files should
 % be included in EPS format.
 %
 % If you use the hyperref package, please uncomment the following line
 % to display URLs in blue roman font according to Springer's eBook style:
-% \renewcommand\UrlFont{\color{blue}\rmfamily}
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+\setcounter{secnumdepth}{3}
 
-\begin{document}
 %
-\title{Communicating with Executives.}
+\title{Topic Analysis and Synthesis on \\ ``Communicating with Executives."}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
@@ -27,110 +29,187 @@
 % First names are abbreviated in the running head.
 % If there are more than two authors, 'et al.' is used.
 %
-\institute{Concordia University, Montreal QC, Canada \\
+\institute{SOEN 6841: Software Project Management \\ Concordia University, Montreal QC, Canada \\
 % Springer Heidelberg, Tiergartenstr. 17, 69121 Heidelberg, Germany
 % \email{lncs@springer.com}\\
 % \url{http://www.springer.com/gp/computer-science/lncs} \and
 % ABC Institute, Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
-\email{namra.solanki@mail.concordia.ca}}
+\email{namra.solanki@mail.concordia.ca}\\ \href{https://github.com/whonamra/soen6841-topic-analysis-synthesis}{GitHub Link}}
 %
-\maketitle              % typeset the header of the contribution
-%
-\begin{abstract}
-A review article explores the evolution of communication strategies from an engineering manager to a CEO, shedding light on challenges faced when interacting with upper management. Early frustrations stemmed from perceived disconnect between non-technical aspects of the business and technical initiatives. With organizational growth, inherent complexity demands strategic communication. \\
 
-The transition to a CEO role unveiled a two-fold challenge: competing demands for attention and the need for more effective communication. Tips for executive communication and presentations are distilled for graduate-level consideration. The granularity of conversations should align with company size, emphasizing independence in managing tactical concerns while communicating broader themes. Proactive communication is crucial, urging managers to push updates even in non-crisis situations. In larger companies, bursty updates serve as valuable reminders. A three-step communication process with executives is outlined, emphasizing clarity and a structured approach. \\
 
-Writing a narrative before presentations aids in identifying gaps and considering diverse perspectives. The article advises against evasiveness, preparing for unexpected questions, and utilizing data for a results-oriented approach. The importance of leading meetings with a clear goal is highlighted, respecting executive time and favoring clarity over ambiguity. These strategies collectively form a comprehensive guide for effective executive communication and leadership amidst organizational growth.
 
+\begin{document}
+% \maketitle  % typeset the header of the contribution
+{\def\addcontentsline#1#2#3{}\maketitle}
+\setcounter{tocdepth}{4}
+\tableofcontents
+\section{Abstract}
+% \begin{abstract}
+In the complex landscape of corporate hierarchies, effective communication between technical professionals and executive management is crucial yet often challenging. This paper investigates the inherent communication barriers that exist due to differences in backgrounds, terminologies, and priorities. Through a combination of qualitative analysis, interviews, and literature reviews, the study aims to identify and develop strategies to enhance this communication channel. The findings suggest a range of strategies including simplification of technical jargon, alignment of technical goals with business objectives, and the use of storytelling techniques. These strategies are not only crucial for the success of individual projects but also for the overall health and advancement of the organization.
 \keywords{Communication  \and Project Management \and Leadership \and Data-driven Decision Making \and Effective Presentation}
-\end{abstract}
-%
-%
-%
-\section{Table of Contents}
+% \end{abstract}
 
-\begin{table}
-\centering
-\caption{Table of Contents}\label{tab1}
-\begin{tabular}{|l|c|}
-\hline
-Title &  Page Number\\
-\hline
-Abstract & 1\\
-Introduction &  1\\
-Background Material & 1\\
-Methods and Methodology & 1\\
-Results Obtained & 1\\
-Conclusion and Future Work & 1\\
-References & 1\\
-\hline
-\end{tabular}
-\end{table}
+\section{Introduction}
+% \vspace{-50pt}
+\subsection{Motivation}
+In the rapidly evolving corporate landscape, effective communication between technical professionals and executive management is crucial. This study is motivated by the observed disconnect in communication styles and understanding between these groups, often leading to strategic misalignments and operational inefficiencies.
 
-\subsubsection{Sample Heading (Third Level)} Only two levels of
-headings should be numbered. Lower level headings remain unnumbered;
-they are formatted as run-in headings.
+\subsection{Problem Statement}
+This report delves into the communication barriers that frequently occur between technical professionals and executive management in corporate settings. The focus is on identifying the root causes of these barriers and exploring strategies to overcome them.
 
-\paragraph{Sample Heading (Fourth Level)}
-The contribution should contain no more than four levels of
-headings. Table~\ref{tab1} gives a summary of all heading levels.
-
-\begin{table}
-\caption{Table captions should be placed above the
-tables.}\label{tab1}
-\begin{tabular}{|l|l|l|}
-\hline
-Heading level &  Example & Font size and style\\
-\hline
-Title (centered) &  {\Large\bfseries Lecture Notes} & 14 point, bold\\
-1st-level heading &  {\large\bfseries 1 Introduction} & 12 point, bold\\
-2nd-level heading & {\bfseries 2.1 Printing Area} & 10 point, bold\\
-3rd-level heading & {\bfseries Run-in Heading in Bold.} Text follows & 10 point, bold\\
-4th-level heading & {\itshape Lowest Level Heading.} Text follows & 10 point, italic\\
-\hline
-\end{tabular}
-\end{table}
+\subsection{Objectives}
+The objective of this research is to formulate effective communication strategies that will enable technical professionals to articulate their ideas and concerns in a way that is both comprehensible and compelling to executive management. This will benefit not only the technical teams in terms of better understanding and support from management but also the executives in making more informed decisions.
 
 
-\noindent Displayed equations are centered and set on a separate
-line.
-\begin{equation}
-x + y = z
-\end{equation}
-Please try to avoid rasterized images for line-art diagrams and
-schemas. Whenever possible, use vector graphics instead (see
-Fig.~\ref{fig1}).
+\section{Background Material}
+\subsection{Unethical Pro-Organizational Behavior (UPB)}
+UPB is defined as actions that are intended to benefit the organization but violate societal values, morals, laws, or standards of proper conduct. This behavior, while aimed at helping the organization, can damage its long-term reputation and sustainability. \cite{ref_article01}
 
+\subsection{Leader-Member Exchange (LMX)} LMX pertains to the quality of interactions and relationships between leaders and their subordinates. The study found that high-quality LMX relationships, where employees feel valued and part of an "in-group," positively influence both organizational identification and UPB. Employees in high-quality LMX relationships are more inclined to engage in UPB, potentially to reciprocate the positive relationship or to maintain their privileged status within the organization. \cite{ref_article01}
+
+\subsection{Organizational Identification} This refers to the degree to which employees identify with their organization. The study found that higher levels of organizational identification are associated with a greater likelihood of engaging in UPB. Employees who strongly identify with their organization may prioritize its interests, even at the cost of ethical considerations. \cite{ref_article01}
+
+\subsection{Leadership Communication and Message Framing} The study highlights the significant impact of how leaders frame their messages. It was found that the framing of messages (gain vs. loss) by leaders plays a crucial role in influencing employees' decisions to participate in UPB. Loss-framed messages were found to amplify the effect of LMX on UPB, while diminishing the effect of organizational identification. In contrast, gain-framed messages had the opposite effect. \cite{ref_article01}
+
+\section{Methods and Methodology}
+
+\subsection{Case Study #1}
+We will focus on the methods and relevant findings for the research paper, "Effects of Leader-Member Exchange, Organizational Identification, and Leadership Communication on Unethical Pro-Organizational Behavior: A Study on Bank Employees in Turkey" \cite{ref_article01}
+
+\subsubsection{Research Context and Sample}
+\begin{itemize}
+    \item \textbf{Industry:} The research was conducted in the banking industry in Turkey, known for its competitive nature and frequent ethical challenges.
+    \item \textbf{Sample:} The study involved 320 bank employees from various branches of public and private banks in Turkey. The banking industry was chosen due to its critical role in the Turkish economy and its significant contribution to qualified employment. \cite{ref_article3}
+    \item \textbf{Sampling Approach:} A convenient sampling method was used to select the participants.
+    \item \textbf{Sample Characteristics:} The branches typically operated in small working groups of around 20 people, with the branches being the primary point of contact between employees and customers.
+\end{itemize}
+
+\subsubsection{Measures Used}
+\begin{itemize}
+    \item \textbf{Leader-Member Exchange (LMX):}Measured using Liden and Maslyn’s 11-item LMX scale, assessing dimensions like affect, loyalty, contribution, and professional respect.
+    \item \textbf{Organizational Identification:} Assessed using Mael and Ashforth’s 6-item unidimensional scale.
+    \item \textbf{Unethical Pro-Organizational Behavior (UPB):} Measured using a 6-item UPB scale developed by Umphress et al. Respondents were asked to role-play and indicate their likelihood of engaging in UPB to attain sales targets.
+    \item \textbf{Message Framing:} Effectiveness of message framing manipulation was measured using respondents' levels of agreement with six statements. \cite{ref_article4}
+    \item \textbf{Measurement Approach:} All measures employed 5-point Likert-type scales. Translation and back-translation procedures were utilized to maintain semantic equivalence.
+    \item \textbf{Control Variables:} Age, education, gender, job tenure, and organizational tenure were also measured.
+    \item \textbf{Data Collection Method:} The data was collected using an online questionnaire distributed to the respondents through personal contacts. \cite{ref_article5}
+    \item \textbf{Ethical Considerations:} Confidentiality and anonymity were ensured. The study was approved by the Ethics Committee of a Turkish University
+\end{itemize}
 \begin{figure}
-\includegraphics[width=\textwidth]{fig1.eps}
-\caption{A figure caption is always placed below the illustration.
-Please note that short captions are centered, while long ones are
-justified by the macro package automatically.} \label{fig1}
+\includegraphics[width=\textwidth]{distribution.png}
+\caption{Demographic characteristics of the sample.} \label{fig1}
 \end{figure}
 
-\begin{theorem}
-This is a sample theorem. The run-in heading is set in bold, while
-the following text appears in italics. Definitions, lemmas,
-propositions, and corollaries are styled the same way.
-\end{theorem}
-%
-% the environments 'definition', 'lemma', 'proposition', 'corollary',
-% 'remark', and 'example' are defined in the LLNCS documentclass as well.
-%
-\begin{proof}
-Proofs, examples, and remarks have the initial word in italics,
-while the following text appears in normal font.
-\end{proof}
-For citations of references, we prefer the use of square brackets
-and consecutive numbers. Citations using labels or the author/year
-convention are also acceptable. The following bibliography provides
-a sample reference list with entries for journal
-articles~\cite{ref_article1}, an LNCS chapter~\cite{ref_lncs1}, a
-book~\cite{ref_book1}, proceedings without editors~\cite{ref_proc1},
-and a homepage~\cite{ref_url1}. Multiple citations are grouped
-\cite{ref_article1,ref_lncs1,ref_book1},
-\cite{ref_article1,ref_book1,ref_proc1,ref_url1}.
+\subsubsection{Analysis Techniques}
+\begin{itemize}
+    \item \textbf{Preliminary Checks:} Inconsistent or missing responses were excluded, leaving 306 questionnaires for analysis.
+    \item \textbf{Conﬁrmatory Factor Analysis (CFA):} Conducted to validate the measurement model, using IBM SPSS Amos 24.
+    \item \textbf{Path Analysis:} Performed to test the direct and indirect relationships between constructs.
+    \item \textbf{Bootstrap Test:} Employed for hypothesis testing, with 5000 re-samples.
+    \item \textbf{Multi-Group Analysis:} Used to examine intergroup differences.
+    \item \textbf{Fit Statistics:} Evaluated the fit of the model to the data
+\end{itemize}
+
+\subsection{Case Study #2}
+We will focus on the methods and relevant findings for the research paper, "uccessful Organizational Business Communication and its Impact on Business Performance: An Intra- and Inter-Organizational Perspective. Journal of Accounting, Business and Finance Research" \cite{ref_article02}
+\subsubsection{Data Collection}
+\begin{itemize}
+    \item \textbf{Stages:} The data collection was conducted in two stages, starting with a pilot survey for initial feedback and adjustments, followed by distributing the main survey questionnaire. \cite{ref_article02}
+    \item \textbf{Respondent Outreach:} Respondents were contacted through personal connections in medium and large enterprises with international operations, and via social media platforms like LinkedIn to engage SME leaders and managers.
+    \item \textbf{Survey Distribution:} The survey was available in both online and offline formats to 417 workers from 38 organizations. \cite{ref_article02}
+\end{itemize}
+\begin{figure}
+\includegraphics[width=\textwidth]{model.png}
+\caption{Proposed model} \label{fig2}
+\end{figure}
+
+\subsubsection{Demographics of Respondents}
+
+\begin{itemize}
+    \item \textbf{Indicators Used:} The demographic profile of respondents was measured using eleven indicators, including gender, age, education, language skills, job position, firm size, income level, industry, preferred type of communication with business partners, communication frequency, and international business scale.
+    \item \textbf{Questionnaire Responses:} A total of 397 questionnaires were collected, with 352 responses (89 percent) being included in the analysis after excluding incomplete or repeated responses. \cite{ref_article7}
+    \item \textbf{Descriptive Statistics:} The study measured trust, transformational leadership, productivity, perceived identity, transactional leadership, market culture, and adhocracy culture among others
+\end{itemize}
+\subsubsection{Measurement Model}
+
+\begin{itemize}
+    \item \textbf{Validation Process:} The measurement model testing included Cronbach's alpha, factor loadings or confirmatory factor loadings (CFA), composite reliability (CR), and average variance extracted (AVE).
+    \item \textbf{Structural Model Testing:}  Used to assess the hypothesized relationships between variables, including moderators such as trust and commitment.
+\end{itemize}
+
+\section{Results Obtained}
+\subsection{Case Study #1}
+
+\begin{itemize}
+    \item \textbf{LMX and Organizational Identification:} LMX was found to have positive direct effects on both organizational identification and UPB. Organizational identification also showed a positive effect on UPB. \cite{ref_article5}
+    \item \textbf{Mediating Role of Organizational Identification:} Organizational identification mediated the relationship between LMX and UPB.
+    \item \textbf{Total Effect:} The total effect of LMX on UPB, strengthened by the mediating role of organizational identification, was statistically significant.
+    \item \textbf{Variation in UPB:} LMX and organizational identification together accounted for 49.5\% of the total variation in UPB.
+    \item \textbf{Moderating Role of Message Framing:} The leader’s message framing played a significant role in employees’ intention to participate in UPB. Specifically, a loss-framed message amplified the positive effect of LMX on UPB while diminishing the effect of organizational identification.
+\end{itemize}
+
+\subsection{Case Study #2}
+\subsubsection{Intra-Organizational Communication}
+\begin{itemize}
+    \item \textbf{Cultural Factors:} Organizational culture and shared values were found to be positively and significantly associated with effective communication, while language was not a key predictor in intra-firm relationships.
+    \item \textbf{Organizational Elements:} Top management support and leadership style were positively associated with effective communication, but information technology had only a marginal impact.
+    \item \textbf{Contextual Factors:} Frequency and diversity of interaction positively influenced effective communication, whereas formality of interaction and opportunistic behavior negatively impacted it.
+\end{itemize}
+
+\subsubsection{Inter-Organizational Communication}
+\begin{itemize}
+    \item \textbf{Language Importance:} In inter-firm communications, language was a crucial factor for successful collaborations with foreign enterprises.
+    \item \textbf{Organizational Characteristics:} Top management support and information technology were positively related to effective communication in an inter-firm context. 
+    \item \textbf{Role of Trust and Commitment:} Trust significantly moderated the relationships between both cultural and organizational factors with effective communication. Commitment only had a moderating effect between organizational factors and effective communication.
+\end{itemize}
+
+\section{Conclusion and Future Work}
+
+\subsection{Conclusion}
+\begin{itemize}
+    \item \textbf{Communication Barriers:} The research highlighted the challenges in communication between technical professionals and executive management in corporate settings, primarily due to differences in language, priorities, and understanding.
+    \item \textbf{Effective Communication Strategies:} Strategies such as simplifying technical jargon, aligning technical goals with business objectives, and using storytelling techniques were found effective. These strategies are crucial not only for the success of individual projects but also for the overall health and advancement of the organization.
+    \item \textbf{Organizational Dynamics:} The study underscored the importance of understanding corporate communication dynamics, especially the differences in priorities and perspectives between technical staff and executives that can lead to miscommunication.
+    \item \textbf{Unethical Pro-Organizational Behavior (UPB):} The research shed light on UPB and its correlation with Leader-Member Exchange (LMX) and organizational identification. High-quality LMX relationships and strong organizational identification were found to increase the likelihood of engaging in UPB. \cite{ref_article01}
+    \item \textbf{Message Framing:} The way leaders frame their messages significantly influences employees' decisions to engage in UPB, with loss-framed messages amplifying the effect of LMX on UPB and diminishing the effect of organizational identification.
+\end{itemize}
+
+\subsection{Future Work}
+\begin{itemize}
+    \item \textbf{Broader Industry Application:} Future studies could explore communication dynamics in other industries beyond banking to provide a more comprehensive understanding of effective communication strategies across different corporate cultures.
+    \item \textbf{Enhanced Measurement Tools:} Development of more sophisticated tools to measure LMX, organizational identification, and UPB, particularly in diverse cultural and organizational settings.
+    \item \textbf{Deeper Analysis of Communication Styles:} Further research into the specific communication styles and preferences of technical professionals and executives could yield more nuanced strategies for effective communication.
+    \item \textbf{Ethical Implications of UPB:} Investigating the ethical implications of UPB in different organizational contexts and developing strategies to mitigate negative impacts while maintaining organizational loyalty and productivity.
+    \item \textbf{Role of Technology in Communication:} Exploring the impact of evolving information technology on intra- and inter-organizational communication, particularly in the context of remote and hybrid work environments.
+    \item \textbf{Longitudinal Studies:} Conducting long-term studies to observe the effects of implemented communication strategies over time, assessing their sustainability and adaptability to changing corporate environments. \cite{ref_article02}
+    \item \textbf{Inclusion of Diverse Perspectives:} Future research should aim to include a wider range of perspectives, particularly from underrepresented groups within the corporate hierarchy, to ensure that communication strategies are inclusive and equitable.
+\end{itemize}
+
+\subsection{Critical Thinking}
+
+\begin{itemize}
+    \item \textbf{Evaluating Communication Strategies:} Critically examine the effectiveness of the identified communication strategies, such as simplifying technical jargon and using storytelling techniques. Consider their applicability in different corporate cultures and contexts.
+    \item \textbf{Assessing Organizational Dynamics:} Analyze how differences in priorities and perspectives between technical staff and executives can lead to miscommunication and strategize ways to bridge these gaps.
+    \item \textbf{Ethical Considerations in UPB:} Reflect on the ethical implications of Unethical Pro-Organizational Behavior (UPB) and its relation to organizational identification and Leader-Member Exchange (LMX). Consider how organizations can maintain productivity and loyalty without compromising ethical standards.
+    \item \textbf{Impact of Leadership Communication:} Delve into the role of message framing by leaders in influencing employee behavior. Explore the ethical and practical implications of different types of message framing, especially in the context of UPB.
+    \item \textbf{Cross-Industry Comparisons:} Compare the findings of the study conducted in the banking industry with other industries to understand if the same communication barriers and strategies apply.
+    \item \textbf{Role of Trust in Communication:} Investigate how trust between employees and management impacts the effectiveness of communication strategies. Consider how trust can be built and maintained in corporate environments.
+    \item \textbf{Technology's Role in Communication:} Explore the impact of evolving information technology on communication within and between organizations. Analyze how technology can enhance or hinder effective communication.
+    
+\end{itemize}
+
+\subsection{Appendix}
+\subsubsection{ChatGPT Prompts}
+\begin{itemize}
+    \item According to similar research paper as the given PDF 2, generate background material that can be useful for further study.
+    \item Convert this ``....."(text) to LaTeX format.
+    \item Prompt to find relevant research paper based on ChatGPT Plugin \hyperlink{https://scholarai.io/}{Scholar.ai}
+    \item Based on the given PDF (which contained the text of TAS), generate relevant titles which can be included in Topic Analysis and Synthesis report.
+    \item Summarize this research paper and find relevant conclusions and important results as well as findings.
+\end{itemize}
+
+
 %
 % ---- Bibliography ----
 %
@@ -141,6 +220,12 @@ and a homepage~\cite{ref_url1}. Multiple citations are grouped
 % \bibliography{mybibliography}
 %
 \begin{thebibliography}{8}
+\bibitem{ref_article01}
+\href{https://scholar.google.com/scholar?q=Ezgi%20Erbas%20Kelebek}{Kelebek, E.E.}; \href{https://scholar.google.com/citations?user=usQNm7AAAAAJ&hl=en&oi=ao}{Alniacik, E.} Effects of Leader-Member Exchange, Organizational Identification and Leadership Communication on Unethical Pro-Organizational Behavior: A Study on Bank Employees in Turkey. Sustainability 2022, 14, 1055. \url{https://doi.org/10.3390/su14031055}
+
+\bibitem{ref_article02}
+\href{https://scholar.google.com/citations?user=TUmIhUwAAAAJ&hl=en}{Valiyeva, A. .}, & \href{https://scholar.google.com/citations?user=YsJ_qDwAAAAJ&hl=en}{Thomas, B. J. }. (2022). Successful Organizational Business Communication and its Impact on Business Performance: An Intra- and Inter-Organizational Perspective. Journal of Accounting, Business and Finance Research, 15(2), 83–91. \url{https://doi.org/10.55217/102.v15i2.586}
+
 \bibitem{ref_article1}
 Title: Motivation and Stakeholder Acceptance in Technology-driven Change Management: Implications for the Engineering Manager. \href{https://www.tandfonline.com/doi/abs/10.1080/10429247.2008.11431764}{Paper Link}, Author: \href{https://scholar.google.com/citations?user=7_LPDDQAAAAJ&hl=en}{Suzanna Long}, \href{https://emse.mst.edu/facultystafffacilities/emsefaculty/davidspurlock/}{David G. Spurlock}
 
@@ -150,30 +235,19 @@ Title: A Transactional Model of Communication. \href{https://www.taylorfrancis.c
 \bibitem{ref_article3}
 Title: Project Management Communication: a Systems Approach \href{https://www.researchgate.net/publication/220195825_Project_Management_Communication_a_Systems_Approach}{Paper Link}, Author: Sharlett Gillard, Jane Johansen
 
-\bibitem{ref_article4}
-Authon: Loo, R. (2002). Title: Journaling: A Learning Tool for Project Management Training and Team-building. Project Management Journal. \href{https://doi.org/10.1177/875697280203300407}{DOI link}
-
 \bibitem{ref_article5}
 Author: \href{https://scholar.google.com/citations?user=o355sjwAAAAJ&hl=en}{Rodriguez, Pedro}. (2017). Conceptual model of communication theories within project process. INNOVA Research Journal. 2. 42-51. 10.33890/innova.v2.n3.2017.131. 
-
-\bibitem{ref_article6}
-Authors: Smit, Marius and Bond-Barnard, Taryn and Steyn, H. Fabris-Rotelli, Inger. (2017). Title: Email communication in project management: A bane or a blessing?. South African Journal of Information Management. in press. 10.4102/sajim.v19i1.826.\href{https://www.researchgate.net/publication/313770452_Email_communication_in_project_management_A_bane_or_a_blessing} {Paper Link}
-
-\bibitem{ref_article7}
-Authors: \href{https://www.researchgate.net/profile/Jonas-Stier}{Stier, Jonas} and \href{https://www.researchgate.net/profile/Margareta-Sandstroem}{Sandström, Margareta. (2009).} Communicative challenges in multinational project work: Obstacles and tools for reaching common understandings. Journal of Intercultural Communication. 9. 10.36923/jicc.v9i3.489. \href{https://www.researchgate.net/publication/285593311_Communicative_challenges_in_multinational_project_work_Obstacles_and_tools_for_reaching_common_understandings}{Paper Link}
 
 \bibitem{ref_article8}
 Author: \href{https://www.scopus.com/authid/detail.uri?authorId=6602223274}{John Wateridge},
 Title: Training for IS/IT project managers: A way forward, International Journal of Project Management, ISSN 0263-7863, \href{https://doi.org/10.1016/S0263-7863(96)00085-3}{Paper Link}.
 
-\bibitem{ref_article9}
-Author: \href{https://scholar.google.com/citations?user=WjhruLQAAAAJ&hl=en}{BG Zulch},
-Title: Communication: The Foundation of Project Management, Procedia Technology, ISSN 2212-0173,
-https://doi.org/10.1016/j.protcy.2014.10.054. \href{https://www.sciencedirect.com/science/article/pii/S2212017314002813}{Paper Link}
-
 \bibitem{ref_article10}
 Author: \href{https://scholar.google.com/citations?user=WjhruLQAAAAJ&hl=en}{BG Zulch},
 Title: Leadership Communication in Project Management, Procedia - Social and Behavioral Sciences, ISSN 1877-0428, https://doi.org/10.1016/j.sbspro.2014.03.021.
 \href{https://www.sciencedirect.com/science/article/pii/S1877042814021120}{Paper Link}
+
+\bibitem{ref_gpt}
+OpenAI. (2023). ChatGPT [Large language model]. \url{https://chat.openai.com}
 \end{thebibliography}
 \end{document}
